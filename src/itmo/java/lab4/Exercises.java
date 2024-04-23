@@ -104,9 +104,20 @@ public class Exercises {
     // Часть II. Четвертое упражнение
 
     public int fourthExerciseTwo(int[] array) {
+        int x = 0;
+        for (int j = 0; j < array.length; j++) {
+            boolean flag = true;
 
-        return 0;
+            for (int i = 0; i < array.length; i++) {
+                if (j != i && array[j] == array[i]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) {
+                return array[j];
+            };
+        }
+        return x;
     }
-
-
 }

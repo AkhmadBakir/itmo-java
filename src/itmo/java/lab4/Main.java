@@ -82,10 +82,10 @@ public class Main {
 
         // Часть II. Четвертое упражнение
 
-        Exercises fourth = new Exercises();
-        int[] array = {1, 2, 3, 4, 5, 6, 7};
-        //int[] yrraa  = fourth.fourthExerciseTwo(array);
-        //System.out.println(Arrays.toString(yrraa));
+//        Exercises fourth = new Exercises();
+//        int[] array = {1, 2, 3, 4, 5, 6, 7};
+//        int x = fourth.fourthExerciseTwo(array);
+//        System.out.println(x);
 
 
 
