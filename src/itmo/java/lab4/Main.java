@@ -1,72 +1,99 @@
 package itmo.java.lab4;
 
+import itmo.java.lab2.Color;
+import itmo.java.lab2.Shapes;
+
+import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+    public static void main(String[] args) {
 
-    public String firstExercise() {
-        StringBuilder result = new StringBuilder();
-        for (int i = 1; i <= 99; i++) {
-            if (i % 2 != 0) {
-                result.append(i);
-            }
-        }
-        return result.toString();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Введите первое целое число:");
+//        int x = scanner.nextInt();
+//        System.out.println("Введите второе целое число:");
+//        int y = scanner.nextInt();
+//        System.out.println("Введите третье целое число:");
+//        int z = scanner.nextInt();
+
+        // Часть I. Первое упражнение
+
+//        Exercises first = new Exercises();
+//        String firstResult = first.firstExercise(x, y);
+//        System.out.println(firstResult);
+
+        // Часть I. Второе упражнение
+
+//        Exercises second = new Exercises();
+//        String secondResult = second.secondExercise(x, y);
+//        System.out.println(secondResult);
+
+        // Часть I. Третье упражнение
+
+//        Exercises third = new Exercises();
+//        Boolean thirdResult = third.thirdExercise(x, y, z);
+//        System.out.println(thirdResult);
+
+        // Часть I. Четвертое упражнение
+
+//        Exercises fourth = new Exercises();
+//        Boolean fourthResult = fourth.fourthExercise(x, y, z);
+//        System.out.println(fourthResult);
+
+        // Часть I. Пятое упражнение
+
+//        Exercises fifth = new Exercises();
+//        int[] array = {3, -3, 7, 4, 5, 2, 3};
+//        Boolean fifthResult = fifth.fifthExercise(array);
+//        System.out.println(fifthResult);
+
+        // Часть I. Шестое упражнение
+
+//        Exercises sixth = new Exercises();
+//        int[] array = {3, -3, 7, 4, 5, 2, 4};
+//        Boolean sixthResult = sixth.sixthExercise(array);
+//        System.out.println(sixthResult);
+
+        // Часть II. Первое упражнение
+
+//        Exercises first = new Exercises();
+//        int[] array = {1, 2, 3, 4, 5, 6, 7};
+//        Boolean firstResult = first.firstExerciseTwo(array);
+//        System.out.println(firstResult);
+
+        // Часть II. Второе упражнение
+
+//        Scanner scanner = new Scanner(System.in);
+//        Exercises second = new Exercises();
+//        System.out.println("Введите длину массива:");
+//        int x = scanner.nextInt();
+//        System.out.println("Введите числа массива:");
+//        int[] array = second.secondExerciseTwo(x);
+//        System.out.println(Arrays.toString(array));
+
+        // Часть II. Третье упражнение
+
+//        Exercises third = new Exercises();
+//        int[] array = {1, 2, 3, 4, 5, 6, 7};
+//        int[] yrraa  = third.thirdExerciseTwo(array);
+//        System.out.println(Arrays.toString(yrraa));
+
+        // Часть II. Четвертое упражнение
+
+        Exercises fourth = new Exercises();
+        int[] array = {1, 2, 3, 4, 5, 6, 7};
+        //int[] yrraa  = fourth.fourthExerciseTwo(array);
+        //System.out.println(Arrays.toString(yrraa));
+
+
+
+
+
+
+
     }
-
-    public String secondExercise() {
-        StringBuilder result = new StringBuilder();
-        for (int i = 1; i <= 100; i++) {
-            if (i % 3 == 0) {
-                result.append(i + "\n");
-            } else if (i % 5 == 0) {
-                result.append(i + "\n");
-            } else if (i % 3 == 0 && i % 5 == 0) {
-                result.append(i + "\n");
-            }
-        }
-        return result.toString();
-    }
-
-    public Boolean thirdExercise() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите первое целое число:");
-        int x = scanner.nextInt();
-        System.out.println("Введите второе целое число:");
-        int y = scanner.nextInt();
-        System.out.println("Введите третье целое число:");
-        int z = scanner.nextInt();
-        return x + y == y;
-    }
-
-    public Boolean fourthExercise() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите первое целое число:");
-        int x = scanner.nextInt();
-        System.out.println("Введите второе целое число:");
-        int y = scanner.nextInt();
-        System.out.println("Введите третье целое число:");
-        int z = scanner.nextInt();
-        return y > x && z > y;
-    }
-
-    public Boolean fifthExercise() {
-        int[] array = new int[] {3, -3, 7, 4, 5, 4, 3};
-        return array[0] == 3 || array[array.length] == 3;
-    }
-
-    public Boolean sixthExercise() {
-        int[] array = new int[] {3, -3, 7, 4, 5, 4, 3};
-        boolean check = false;
-        for (int i = 0; i <= array.length; i++) {
-            if (array[i] == 1 || array[i] == 3) {
-                check = true;
-            }
-        }
-        return check;
-    }
-
 
 }
 
