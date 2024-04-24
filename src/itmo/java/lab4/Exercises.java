@@ -1,5 +1,7 @@
 package itmo.java.lab4;
 
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Exercises {
@@ -120,4 +122,74 @@ public class Exercises {
         }
         return x;
     }
+
+    // Часть II. Пятое упражнение
+
+    public int[] fifthExerciseTwo(int[] array) {
+        Random rnd = new Random();
+        for (int i = 0 ; i < array.length - 1; i++) {
+            array[i] = rnd.nextInt(100);
+        }
+        if (array.length < 2) {
+            return array;
+        }
+
+        //System.out.println(Arrays.toString(array));
+
+        int mid = array.length / 2;
+
+        int[] left = new int[mid];
+
+        int[] right;
+
+        if (array.length % 2 == 0) {
+            right = new int[mid];
+        } else {
+            right = new int[mid + 1];
+        }
+
+        for (int i = 0; i < left.length; i++) {
+            left[i] = array[i];
+        }
+
+        for (int i = 0; i < right.length; i++) {
+            right[i] = array[mid + i];
+        }
+
+        left = fifthExerciseTwo(left);
+        right = fifthExerciseTwo(right);
+
+
+        return mergeParts(left, right);
+    }
+
+    private static int[] mergeParts(int[] left, int[] right) {
+        int[] result = new int[left.length + right.length];
+
+        //System.out.println(Arrays.toString(left));
+        //System.out.println(Arrays.toString(right));
+
+        int leftPointer = 0;
+        int rightPointer = 0;
+        int resultPointer = 0;
+
+        while (leftPointer < left.length || rightPointer < right.length) {
+            if (leftPointer < left.length && rightPointer < right.length) {
+                if (left[leftPointer] < right[rightPointer]) {
+                    result[resultPointer++] = left[leftPointer++];
+                } else {
+                    result[resultPointer++] = right[rightPointer++];
+                }
+            } else if (leftPointer < left.length) {
+                result[resultPointer++] = left[leftPointer++];
+            } else if (rightPointer < right.length) {
+                result[resultPointer++] = right[rightPointer++];
+            }
+        }
+
+        //System.out.println(Arrays.toString(array));
+
+        return result;
+    }
+
 }

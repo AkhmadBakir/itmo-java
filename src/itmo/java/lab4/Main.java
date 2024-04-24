@@ -83,14 +83,19 @@ public class Main {
         // Часть II. Четвертое упражнение
 
 //        Exercises fourth = new Exercises();
-//        int[] array = {1, 2, 3, 4, 5, 6, 7};
+//        int[] array = {1, 1, 3, 3, 5, 5};
 //        int x = fourth.fourthExerciseTwo(array);
 //        System.out.println(x);
 
+        // Часть II. Пятое упражнение
 
-
-
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите длину массива:");
+        int x = scanner.nextInt();
+        int[] array = new int[x];
+        Exercises fifth = new Exercises();
+        int[] arraySort = fifth.fifthExerciseTwo(array);
+        System.out.println(Arrays.toString(arraySort));
 
 
     }
