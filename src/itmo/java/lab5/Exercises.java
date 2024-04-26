@@ -41,5 +41,33 @@ public class Exercises {
         return text.replaceAll("бяка", "[вырезано цензурой]");
     }
 
+    //    Четвертое упражнение
+
+    public static int countString(String firstString, String secondString) {
+        int lastIndex = 0;
+        int count = 0;
+
+        while (lastIndex != -1) {
+
+            lastIndex = firstString.indexOf(secondString, lastIndex);
+
+            if (lastIndex != -1) {
+                count++;
+                lastIndex += secondString.length();
+            }
+        }
+        return count;
+    }
+
+    //    Пятое упражнение
+
+    public static String backString(String text) {
+        String[] array = new StringBuilder(text).reverse().toString().split(" ");
+        StringBuilder result = new StringBuilder();
+        for (int i = array.length - 1; i >= 0; i--) {
+            result.append(array[i]).append(" ");
+        }
+        return result.toString();
+    }
 
 }

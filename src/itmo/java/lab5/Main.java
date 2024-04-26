@@ -28,6 +28,28 @@ public class Main {
 //        String censor = Exercises.myCensor(text);
 //        System.out.println(censor);
 
+        //    Четвертое упражнение
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Введите первую строку:");
+//        String firstString = scanner.nextLine();
+//        System.out.println("Введите вторую строку:");
+//        String secondString = scanner.nextLine();
+//        int count = Exercises.countString(firstString, secondString);
+//        System.out.printf("Количество вхождений: %d%n", count);
+
+        //    Пятое упражнение
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Введите строку:");
+//        String text = scanner.nextLine();
+//        String result = Exercises.backString(text);
+//        System.out.printf(result);
+
+
+
+
+
 
     }
 }
