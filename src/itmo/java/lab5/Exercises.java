@@ -23,10 +23,11 @@ public class Exercises {
 //    Второе упражнение
 
     public static Boolean palindromCheck(String text) {
+        String text1 = text.toLowerCase();
         int i1 = 0;
-        int i2 = text.length() - 1;
+        int i2 = text1.length() - 1;
         while (i2 > i1) {
-            if (text.charAt(i1) != text.charAt(i2)) {
+            if (text1.charAt(i1) != text1.charAt(i2)) {
                 return false;
             }
             i1++;
@@ -37,8 +38,8 @@ public class Exercises {
 
     //    Третье упражнение
 
-    public static String myCensor(String text) {
-        return text.replaceAll("бяка", "[вырезано цензурой]");
+    public static String myCensor(String text, String text1, String text2) {
+        return text.replaceAll(text1, text2);
     }
 
     //    Четвертое упражнение
@@ -46,9 +47,7 @@ public class Exercises {
     public static int countString(String firstString, String secondString) {
         int lastIndex = 0;
         int count = 0;
-
         while (lastIndex != -1) {
-
             lastIndex = firstString.indexOf(secondString, lastIndex);
 
             if (lastIndex != -1) {

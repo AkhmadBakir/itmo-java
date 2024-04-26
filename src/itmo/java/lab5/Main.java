@@ -25,7 +25,11 @@ public class Main {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Введите текст для проверки:");
 //        String text = scanner.nextLine();
-//        String censor = Exercises.myCensor(text);
+//        System.out.println("Введите текст, который необходимо заменить:");
+//        String text1 = scanner.nextLine();
+//        System.out.println("Введите текст, на который необходимо заменить:");
+//        String text2 = scanner.nextLine();
+//        String censor = Exercises.myCensor(text, text1, text2);
 //        System.out.println(censor);
 
         //    Четвертое упражнение
