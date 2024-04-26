@@ -1,4 +1,4 @@
-package itmo.java.Lab3;
+package itmo.java.lab3;
 
 public class JavaProgram {
     public static void main(String[] args) {
