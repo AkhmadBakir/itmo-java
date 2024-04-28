@@ -8,24 +8,14 @@ public class Parent {
 
     Scanner scanner = new Scanner(System.in);
 
-    public int getUserAge() {
-        return userAge;
+    public void lab() {
+        System.out.println("Введите возраст: ");
+        this.userAge = scanner.nextInt();
+        System.out.println(userAge);
     }
 
-    public void setUserAge(int userAge) {
+    public Parent(int userAge, String userName) {
         this.userAge = userAge;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String name) {
         this.userName = userName;
     }
-
-    public void lab() {
-        this.userAge = scanner.nextInt();
-    }
-
 }
