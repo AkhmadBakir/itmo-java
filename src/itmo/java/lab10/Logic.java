@@ -59,13 +59,21 @@ public class Logic {
              BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile))) {
             String string = null;
             while ((string = reader.readLine()) != null) {
-                String string1 = string.replace(" ", "$");
+                String string1 = string.replace(" ", "$");  //("[^A-Za-zА-Яа-я0-9]", "$");
                 System.out.println(string1);
                 writer.write(string1);
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
-        tempFile.renameTo(new File("file1.txt"));
+        try (BufferedReader reader = new BufferedReader(new FileReader(tempFile));
+             BufferedWriter writer = new BufferedWriter(new FileWriter(file1))) {
+            String string = null;
+            while ((string = reader.readLine()) != null) {
+                writer.write(string);
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+        }
     }
 }

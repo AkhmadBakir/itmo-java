@@ -10,7 +10,7 @@ public class Main {
 
 //        Первое упражнение
 
-        File file1 = new File("files/file1.txt");
+//        File file1 = new File("files/file1.txt");
 //        List<String> myList1 = myMethod(file1);
 //        System.out.println(myList1);
 
@@ -27,7 +27,6 @@ public class Main {
 
 //        Четвертое упражнение
 
-
-        myMethod2(file1);
+//        myMethod2(file1);
     }
 }
